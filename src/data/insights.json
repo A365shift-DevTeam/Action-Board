@@ -1,0 +1,16 @@
+{
+  "scrapWipTrends": [
+    { "metric": "Scrap (Lacs)", "bu1": { "value": "15", "status": "good" }, "bu2": { "value": "25", "status": "warning" }, "bu3": { "value": "30", "status": "critical" } },
+    { "metric": "WIP (Days)", "bu1": { "value": "â", "status": "good" }, "bu2": { "value": "â", "status": "good" }, "bu3": { "value": "â", "status": "good" } }
+  ],
+  "plantPerformance": [
+    { "plant": "Plant-1", "bu1": { "value": "+5", "status": "good" }, "bu2": { "value": "â", "status": "good" }, "bu3": { "value": "-10", "status": "critical" } },
+    { "plant": "Plant-2", "bu1": { "value": "â", "status": "good" }, "bu2": { "value": "0", "status": "warning" }, "bu3": { "value": "+8", "status": "good" } },
+    { "plant": "Plant-3", "bu1": { "value": "+2", "status": "good" }, "bu2": { "value": "+8", "status": "good" }, "bu3": { "value": "-6", "status": "critical" } }
+  ],
+  "keyInsights": [
+    { "type": "critical", "title": "Quality Alert", "message": "Plant-2 BU3 Scrap 50% higher than plan." },
+    { "type": "warning", "title": "Delivery Alert", "message": "Plant-1 BU1 OLE 10% below plan." },
+    { "type": "good", "title": "Positive Note", "message": "Plant-1 BU2 100% Poka Yoke Adherence." }
+  ]
+}

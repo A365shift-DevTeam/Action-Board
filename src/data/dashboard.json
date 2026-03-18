@@ -1,0 +1,26 @@
+{
+  "header": {
+    "greeting": "Good morning, MD",
+    "date": "Aug 2025",
+    "plants": "Plants 1 & 2"
+  },
+  "kpis": [
+    { "title": "Exceeded", "value": 18, "color": "text-emerald-500" },
+    { "title": "Achieved", "value": 2, "color": "text-blue-500" },
+    { "title": "Need Focus", "value": 16, "color": "text-amber-500" },
+    { "title": "Total Metrics", "value": 36, "color": "text-gray-300" }
+  ],
+  "alerts": [
+    { "type": "warning", "message": "3 critical items: BU3 Scrap (67%), BU3 WIP (71%), BU2 MLR (71%)" }
+  ],
+  "metrics": [
+    { "title": "ALR (%)", "subtext": "BU1 - Plant 1", "value": 57, "status": "need-focus", "plant": "Plant 1", "bu": "BU1", "type": "Quality", "shift": "Shift 1", "productLine": "Model A" },
+    { "title": "MLR (%)", "subtext": "BU1 - Plant 1", "value": 93, "status": "need-focus", "plant": "Plant 1", "bu": "BU1", "type": "Quality", "shift": "Shift 2", "productLine": "Model B" },
+    { "title": "Poka yoke", "subtext": "BU2 - Plant 1", "value": 96, "status": "need-focus", "plant": "Plant 1", "bu": "BU2", "type": "Quality", "shift": "Shift 3", "productLine": "Model C" },
+    { "title": "Supplier PPM", "subtext": "BU3 - Plant 2", "value": 109, "status": "exceeded", "plant": "Plant 2", "bu": "BU3", "type": "Quality", "shift": "Shift 1", "productLine": "Model A" },
+    { "title": "CLR PPM", "subtext": "BU4 - Plant 2", "value": 167, "status": "exceeded", "plant": "Plant 2", "bu": "BU4", "type": "Quality", "shift": "Shift 2", "productLine": "Model B" },
+    { "title": "On-Time Delivery", "subtext": "BU1 - Plant 1", "value": 98, "status": "achieved", "plant": "Plant 1", "bu": "BU1", "type": "Delivery", "shift": "Shift 3", "productLine": "Model C" },
+    { "title": "Scrap Rate", "subtext": "BU2 - Plant 2", "value": 85, "status": "need-focus", "plant": "Plant 2", "bu": "BU2", "type": "Quality", "shift": "Shift 1", "productLine": "Model A" },
+    { "title": "Schedule Adherence", "subtext": "BU3 - Plant 1", "value": 100, "status": "achieved", "plant": "Plant 1", "bu": "BU3", "type": "Delivery", "shift": "Shift 2", "productLine": "Model B" }
+  ]
+}

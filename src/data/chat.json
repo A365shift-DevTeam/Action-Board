@@ -1,0 +1,16 @@
+{
+  "suggestions": [
+    "Which BU needs attention?",
+    "Top 3 risks this month",
+    "Show me Plant 1 performance",
+    "Analyze Scrap trends"
+  ],
+  "history": [
+    { "role": "ai", "content": "Hello MD, I'm your AI assistant. How can I help you analyze the plant data today?" }
+  ],
+  "mockResponses": {
+    "Which BU needs attention?": "Based on current data, **BU3** requires immediate attention. Scrap is at 30 Lacs (critical) and Plant-1 performance for BU3 is down by 10 points.",
+    "Top 3 risks this month": "1. **BU3 Scrap**: Currently 50% higher than plan in Plant-2.\n2. **BU1 Delivery**: OLE is 10% below plan in Plant-1.\n3. **BU2 MLR**: Currently at 71%, needing focus.",
+    "default": "I'm analyzing the data for that request. Based on current trends, overall performance is stable but specific areas like BU3 Scrap need monitoring."
+  }
+}
