@@ -1,4 +1,4 @@
-import { Outlet, useLocation, useNavigate } from "react-router-dom";
+import { Outlet, useLocation, Link } from "react-router-dom";
 import { Home, Lightbulb, MessageSquare, FileText } from "lucide-react";
 import { cn } from "@/src/lib/utils";
 import { motion, AnimatePresence } from "motion/react";
@@ -12,7 +12,6 @@ const navItems = [
 
 export default function MainLayout() {
   const location = useLocation();
-  const navigate = useNavigate();
 
   return (
     <div className="flex flex-col h-[100dvh] bg-[var(--color-surface)] text-slate-900 overflow-hidden relative font-sans">
@@ -40,9 +39,9 @@ export default function MainLayout() {
             const Icon = item.icon;
 
             return (
-              <button
+              <Link
                 key={item.path}
-                onClick={() => navigate(item.path)}
+                to={item.path}
                 className={cn(
                   "flex flex-col items-center justify-center w-full h-full space-y-1 transition-all duration-200",
                   isActive ? "text-brand-600" : "text-slate-400 hover:text-slate-600"
@@ -59,7 +58,7 @@ export default function MainLayout() {
                   )}
                 </div>
                 <span className={cn("text-[10px] font-medium", isActive && "font-semibold")}>{item.label}</span>
-              </button>
+              </Link>
             );
           })}
         </div>
